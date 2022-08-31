@@ -1,8 +1,13 @@
 import { MdOutlineBookmarkAdd } from "react-icons/md";
 import sbc from "./imgs/1628016249403.jfif";
 import djz from "./imgs/1526292777576.jfif";
+import gdsc from "./imgs/gdsc.png";
+import usthb from "./imgs/usthb.jfif";
 import Posts from './Posts';
+import { Link } from "react-router-dom";
+import { useState } from "react";
 const PIR = () => {
+    const [more,setMore] = useState(false);
     return (
         <div className="z-40  flex justify-between mx-auto w-[80%]">
             <div className='w-[250px] h-fit border-2 relative  ml-[8%]  flex flex-col  rounded-lg bg-gray-100 cursor-default'>
@@ -48,7 +53,9 @@ const PIR = () => {
                 <div className="flex items-center   border-b-2 w-[90%] mx-auto cursor-pointer">
                     <MdOutlineBookmarkAdd size={25} className=' ' /><p className=' text-[#0183FF] font-semibold font-mon text-[16px] py-2 hover:text-blue-600' >saved</p>
                 </div>
-                <h1 className="text-[#0183FF] font-mon font-semibold my-2 ml-9 cursor-pointer hover:text-blue-600">Login</h1>
+                <Link to="/signin" className="text-[#0183FF] font-mon font-semibold my-2 ml-9 cursor-pointer hover:text-blue-600">
+                <h1 >Login</h1>
+                </Link>
             </div>
             <Posts/>
             <div className='w-96 h-fit border-2 flex flex-col  rounded-lg bg-gray-100 cursor-pointer '>
@@ -68,7 +75,17 @@ const PIR = () => {
                     <h2 className="font-pop font-semibold text-[14px] text-gray-500  " >Network</h2>
                     <h2 className="px-3 font-semibold font-mon text-white bg-[#0183FF] rounded-full ml-auto mr-4 hover:scale-110 hover:bg-blue-600">Join</h2>
                 </div>
-                <h1 className="font-mon font-bold text-gray-500  text-lg  w-full bg-gray-200 flex items-center justify-center py-2 " ><p className="hover:drop-shadow-sm hover:scale-105">see all</p></h1>
+                { more &&  <div className=" flex w-[90%] border-b-2 py-2 ml-2 items-center  ">
+                    <div className="w-11 h-11  bg-white rounded-full mr-2"> <img src={gdsc} alt="" className="rounded-full" /></div>
+                    <h2 className="font-pop font-semibold text-[14px] text-gray-500 " >GDSC USTHB</h2>
+                    <h2 className="px-3 font-semibold font-mon text-white bg-[#0183FF] rounded-full ml-auto mr-4 hover:scale-110 hover:bg-blue-600">Join</h2>
+                </div>}
+                { more &&  <div className=" flex w-[90%] border-b-2 py-2 ml-2 items-center  ">
+                    <div className="w-11 h-11  bg-white rounded-full mr-2"> <img src={usthb} alt="" className="rounded-full" /></div>
+                    <h2 className="font-pop font-semibold text-[14px] text-gray-500 " >Usthb</h2>
+                    <h2 className="px-3 font-semibold font-mon text-white bg-[#0183FF] rounded-full ml-auto mr-4 hover:scale-110 hover:bg-blue-600">Join</h2>
+                </div>}
+                <h1 className="font-mon font-bold text-gray-500  text-lg  w-full bg-gray-200 flex items-center justify-center py-2 " onClick={() => setMore(!more)} ><p className="hover:drop-shadow-sm hover:scale-105">see all</p></h1>
             </div>
         </div>
     );

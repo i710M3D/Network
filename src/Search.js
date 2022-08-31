@@ -4,9 +4,9 @@ import { BiSearch } from 'react-icons/bi';
 
 import { RiHomeWifiFill ,RiCompassDiscoverFill ,RiAddCircleFill ,RiNotification3Fill,RiChat3Fill} from 'react-icons/ri';
 const Search = () => {
-    const [nav,setNav] = useState(0)
-    
-    return (   
+    const [nav,setNav] = useState(0);
+
+    return (  
         <div className='fixed top-0 w-full z-20'>
             
         <div className=' h-16 w-full  flex items-center relative border-b-2 bg-white'>

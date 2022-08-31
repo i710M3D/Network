@@ -18,16 +18,16 @@ const Singin = ({FunNav}) => {
     return (
         <div className='flex  flex-wrap  flex-row  justify-between bg-white h-screen w-full z-30'>
             <div className="ml-[6%] flex flex-wrap flex-col w-[473px] mr-[6%] max-h-fit   ">
-                <h2 className="mt-[14px] font-jost font-semibold text-[32px]  leading-[43px] sm:mx-auto sm:mt-[271px] sm:text-[36px] md:mx-0 md:mt-[14px]  md:text-[32px] lg:mx-0 "><span className='text-[#0183FF]'>N</span>etwork.</h2>
-                <div className="sm:mt-[20px] md:mt-[192px] grid gap-[2px]">
-                    <h2 className="font-mon font-semibold text-[32px] text-[#1F1F1F]  leading-[39px] m-0">Sign in</h2>
-                    <p className="font-mon text-[#666666] opacity-80 text-[16px] font-normal  leading-[20px] ">Sign in for free to access our platform</p>
+                <h2 className="mt-[14px] font-jost font-semibold text-[32px]  leading-[43px] sm:mx-auto sm:mt-[271px] sm:text-[36px] md:mx-0 md:mt-[14px]  md:text-[32px] lg:mx-0 cursor-pointer "><span className='text-[#0183FF]'>N</span>etwork.</h2>
+                <div className="sm:mt-[20px] md:mt-[192px] grid gap-[2px] ">
+                    <h2 className="font-mon font-semibold text-[32px] text-[#1F1F1F]  leading-[39px] m-0 cursor-pointer">Sign in</h2>
+                    <p className="font-mon text-[#666666] opacity-80 text-[16px] font-normal  leading-[20px] cursor-pointer">Sign in for free to access our platform</p>
                 </div>
                 <div className="md:mt-[54px] sm: mt-[16px] ">
                     <form>
 
-                        <label htmlFor='email' className="cursor-pointer font-mon font-normal text-[16px] leading-[20px] text-[#666666] block max-w-fit  ">Email address</label>
-                        <input id='email' type="email" className=" cursor-pointer border-box h-[56px] w-[100%] border-[1px] border-solid border-[#666666]/30 rounded-[12px]  mb-[19px] mt-[11px] block pl-[25px] font-pop text-[#666666] text-[14px] "></input>
+                        <label htmlFor='email' className="cursor-pointer font-mon font-normal text-[16px] leading-[20px] text-[#666666] block max-w-fit  ">Email address/Username</label>
+                        <input id='email' type="text" className=" cursor-pointer border-box h-[56px] w-[100%] border-[1px] border-solid border-[#666666]/30 rounded-[12px]  mb-[19px] mt-[11px] block pl-[25px] font-pop text-[#666666] text-[14px] "></input>
 
                         <div className="flex flex-wrap flex-row  justify-between mr-[16px]  items-baseline " >
                         <label htmlFor='psw' className=" cursor-pointer font-mon font-normal text-[16px] inline leading-[20px] text-[#666666]  max-w-fit ">Password</label>
@@ -39,7 +39,7 @@ const Singin = ({FunNav}) => {
                             </button>
                         </div>
                         <input id='password' type={psw}  className="cursor-pointer border-box h-[56px] w-[100%] border-[1px] border-solid border-[#666666]/30 rounded-[12px]   mt-[5px] block pl-[25px] font-pop text-[#666666] text-[14px] " />
-                        <p className="font-mon font-normal leading-[17px]  text-[#666666] mt-[4px] mb-[25px] text-[14px]  ">Use 8 or more characters with a mix of letters, numbers & symbols</p>
+                        <p className="font-mon font-normal leading-[17px]  text-[#666666] mt-[4px] mb-[25px] text-[14px]  ">Forget your <span className='text-[#0183FF] cursor-pointer hover:text-blue-700'>Password</span> ?</p>
                         <Link to="/">
                         <button type='button' className='md:mt-[26px] w-[100%] h-[64px] py-[18px] bg-[#0183FF] rounded-[18px] font-mon font-semibold text-[22px] leading-[27px] text-white md:block sm:hidden '>Log in</button>
                         </Link>
@@ -53,8 +53,8 @@ const Singin = ({FunNav}) => {
                 <Link to='/Signup1' >
                 <div className='border-center w-[100%] h-[80.18px] mt-[37px] border-[0.8px] border-solid border-[#666666]/30 rounded-[19px] flex justify-center items-center '>
                    <h2 className='font-mon font-normal text-[16px] leading-[20px] text-[#333333]  '>Don't have an account?
-                    <span className=' font-medium'>
-                     Contact Us. 
+                    <span className=' font-semibold text-[#0183FF] text-[18px] underline hover:text-blue-600'>
+                     Sign up. 
                     </span> 
                     </h2>
                 </div>

@@ -7,11 +7,9 @@ import { useState } from "react";
 
 import { Link } from "react-router-dom";
 const CreatePost = () => {
-    const [page, setPage] = useState(0);
-    
+    const [page, setPage] = useState(0)
     return (
         <div>
-            
             <div className="h-screen w-full mt-16">
 
                 <h1 className="font-mon text-gray-500 text-xl font-semibold w-[40%] border-b-2 mx-auto pt-12">Create Post</h1>

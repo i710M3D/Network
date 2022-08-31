@@ -26,15 +26,15 @@ const Signup = ({ FunNav }) => {
         <div className='flex   bg-white h-screen w-full '>
             <div className=" ml-[6%] mr-[6%] flex flex-wrap w-[473px]  ">
                 <div className='sm:mx-auto   md:mx-0 lg:mx-0'>
-                    <h2 className="mt-[14px] font-jost font-semibold text-[32px]  leading-[43px] sm:mx-auto sm:mt-[271px] sm:text-[36px] md:mx-0 md:mt-[14px]  md:text-[32px] lg:mx-0 "><span className='text-[#0183FF]'>N</span>etwork.</h2>
+                    <h2 className="mt-[14px] font-jost font-semibold text-[32px]  leading-[43px] sm:mx-auto sm:mt-[271px] sm:text-[36px] md:mx-0 md:mt-[14px]  md:text-[32px] lg:mx-0 cursor-pointer "><span className='text-[#0183FF]'>N</span>etwork.</h2>
                 </div>
 
                 <div className="mt-[75px]   ">
                     <div className="mb-12  ml-[0%] ">
-                        <h2 className="font-mon font-semibold text-[32px] text-[#1F1F1F]  leading-[39px] m-0">Sign up</h2>
-                        <p className="font-mon text-[#666666] opacity-80 text-[16px] font-normal  leading-[20px] ">Sign up for free to access our platform</p>
+                        <h2 className="font-mon font-semibold text-[32px] text-[#1F1F1F]  leading-[39px] m-0 cursor-pointer">Sign up</h2>
+                        <p className="font-mon text-[#666666] opacity-80 text-[16px] font-normal  leading-[20px]  cursor-pointer">Sign up for free to access our platform</p>
                     </div>
-                    <div className="font-mon font-semibold text-[22px] leading-[27px] text-[#666666]    text-center smn:hidden mdn:block ">1/2</div>
+                    <div className="font-mon font-semibold text-[22px] leading-[27px] text-[#666666]    text-center smn:hidden mdn:block cursor-pointer">1/2</div>
                     <form>
 
                         <label htmlFor='email' className="cursor-pointer font-mon font-normal text-[16px] leading-[20px] text-[#666666] block max-w-fit  ">Email address</label>
@@ -61,11 +61,11 @@ const Signup = ({ FunNav }) => {
 
                 <div className="max-w-fit mt-7">
                     <label htmlFor='ha' className=" font-mon font-normal text-[16px] leading-[20px] text-[#333333] mb-[28px] flex justify-start items-center ">
-                        <input type="checkbox" name="" className="cursor-pointer w-[18px] h-[18px] mr-[11px] accent-black" />
-                        <span className=''>Agree to our <Link to='/terms-of-use'><span className="underline cursor-pointer text-[#0183FF]">Terms of use</span></Link> and <Link to='/privacy-policy'><span className="underline cursor-pointer text-[#0183FF]">Privacy
+                        <input type="checkbox" id='ha' name="" className="cursor-pointer w-[18px] h-[18px] mr-[11px] accent-black" />
+                        <span className='cursor-pointer'>Agree to our <Link to='/terms-of-use'><span className="underline cursor-pointer text-[#0183FF] ">Terms of use</span></Link> and <Link to='/privacy-policy'><span className="underline cursor-pointer text-[#0183FF]">Privacy
                             Policy</span></Link> </span></label>
                     <label htmlFor='ba' className=" font-mon font-normal text-[16px] leading-[20px] text-[#333333]   flex justify-start items-center">
-                        <input type="checkbox" name="" className="cursor-pointer w-[18px]  h-[18px] mr-[11px] accent-black " /><span className='cursor-pointer'>Subscribe to our monthly newsletter</span></label>
+                        <input type="checkbox" id="ba" name="" className="cursor-pointer w-[18px]  h-[18px] mr-[11px] accent-black " /><span className='cursor-pointer'>Subscribe to our monthly newsletter</span></label>
                 </div>
 
 

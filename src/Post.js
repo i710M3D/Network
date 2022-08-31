@@ -14,15 +14,15 @@ const Post = ( {user,rate,category,boost,content,img,time,title}) => {
     return (
         <div className='cursor-pointer'>
 
-            <div className="max-h-[600px] w-[600px] border-[1px]  mt-[20px] rounded-[8px]  flex bg-gray-100  ">
+            <div className="max-h-[600px] w-[600px]   mt-[20px] rounded-[8px]  flex bg-gray-100  ">
 
-                <div className='max-h-full w-[48px] bg-gray-200 flex flex-col items-center  '>
+                <div className='max-h-full w-[48px] bg-gray-200 flex flex-col items-center rounded-l-[8px] rounded-b-[8px]  '>
 
-                    <div className='h-fit w-[48px]  flex flex-col items-center  bg-[#0183FF] text-white  hover:bg-blue-600 rounded-l ' onClick={() => setStar(!star)}>
+                    <div className='h-fit w-[48px]  flex flex-col items-center  bg-[#0183FF] text-white  hover:bg-blue-600 rounded-l rounded-b-none' onClick={() => setStar(!star)}>
                         <AiFillStar size={25} className={star ? 'mt-4' : 'mt-4 text-yellow-400'} />
                         <p className=' '>{rate}</p> 
                     </div>
-                    <MdLightbulbOutline size={25} className={light ? 'mt-auto mb-1 hover:scale-105' : 'mt-auto mb-1 text-yellow-500 hover:scale-105'} onClick={() => setLight(!light)}/>
+                    <MdLightbulbOutline size={25} className={light ? 'mt-auto mb-1 hover:scale-110' : 'mt-auto mb-1 text-yellow-500 scale-110 hover:scale-110'} onClick={() => setLight(!light)}/>
                 </div>
 
                 <div className=' w-[600px]'>
@@ -50,18 +50,18 @@ const Post = ( {user,rate,category,boost,content,img,time,title}) => {
                        <div className='hover:text-blue-600 flex'>
                         <RiShareForward2Line size={20} className='mt-1 mr-1' /><p className='mr-4' >share</p>
                        </div>
-                       <div className='hover:text-blue-600 flex' onClick={() => setSv(!sv)}> 
+                       <div className={ sv ? 'hover:text-blue-600 flex': 'text-yellow-400 hover:text-yellow-500 flex'} onClick={() => setSv(!sv)}> 
                         <MdOutlineBookmarkAdd size={20} className='mt-1 ' /><p className='mr-4'  >save{!sv && <span>d</span>}</p>
                        </div>
-                       <div className='hover:text-blue-600 flex'> 
-                        <HiOutlineDotsHorizontal size={20} className='cursor-pointer ml-auto mr-5' onClick={() => setDown(!down)} />
+                       <div className='hover:text-blue-600 flex ml-auto'> 
+                        <HiOutlineDotsHorizontal size={20} className='cursor-pointer  mr-5' onClick={() => setDown(!down)} />
                        </div> 
                     </div>
 
                 </div>
 
             </div>
-            {!down && <div className='w-[150px] h-[64px] border-4 ml-96 flex flex-col  justify-center   text-[#0183FF] font-semibold text-md  rounded-xl bg-white z-10 fixed'>
+            {!down && <div className='w-[150px] h-[64px] border-4 border-gray-300 ml-[440px] flex flex-col  justify-center   text-[#0183FF] font-semibold text-md  rounded-xl bg-white z-10 absolute '>
                 <div className='flex border-b-4 px-2 items-center hover:text-blue-600'>
                     <FaRegFlag size={20} className='mr-2 ' /><p className='mb-1' >report</p>
                 </div>
@@ -78,10 +78,10 @@ const Post = ( {user,rate,category,boost,content,img,time,title}) => {
 }
 const Category = ({category}) =>  ( 
     <div className='  w-[172px]  flex h-fit flex-wrap justify-between  mt-3 mr-2 '>    
-    {category[0] && < p className='rounded-2xl  w-20 bg-gray-200 font-semibold text-gray-500  mt-1 flex justify-center px-2 py-1 '>{category[0]}</p>}
-    {category[1] && < p className='rounded-2xl  w-20 bg-gray-200 font-semibold text-gray-500  mt-1 flex justify-center px-2 py-1 '>{category[1]}</p>}
-    {category[2] && < p className='rounded-2xl  w-20 bg-gray-200 font-semibold text-gray-500  mt-1 flex justify-center px-2 py-1 '>{category[2]}</p>}
-    {category[3] && < p className='rounded-2xl  w-20 bg-gray-200 font-semibold text-gray-500  mt-1 flex justify-center px-2 py-1 '>{category[3]}</p>}
+    {category[0] && < p className='rounded-2xl  max-w-32  bg-gray-200 font-semibold text-gray-500  mt-1 flex justify-center px-2 py-1 mx-auto '>{category[0]}</p>}
+    {category[1] && < p className='rounded-2xl  max-w-32  bg-gray-200 font-semibold text-gray-500  mt-1 flex justify-center px-2 py-1 mx-auto'>{category[1]}</p>}
+    {category[2] && < p className='rounded-2xl  max-w-32  bg-gray-200 font-semibold text-gray-500  mt-1 flex justify-center px-2 py-1 mx-auto'>{category[2]}</p>}
+    {category[3] && < p className='rounded-2xl  max-w-32  bg-gray-200 font-semibold text-gray-500  mt-1 flex justify-center px-2 py-1 mx-auto'>{category[3]}</p>}
     </div>
     )
 
