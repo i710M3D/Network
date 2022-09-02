@@ -2,7 +2,7 @@ import Post from "./Post";
 
 const Posts = () => {
     return (
-        <div className=" w-fit ">
+        <div className=" max-w-fit mx-auto 2xl:ml-auto 2xl:mr-0  ">
             <Post rate="5" user="Network/network" time="1 min ago" title="First post" content="Hello networkians!! and Summer Break Challenge judges,hope you're doing great, you can find in the posts below some cool facts about our platform. Enjoy your time!" category={['Hello !!', 'WOOHA', 'Happy']} boost={true} />
             <Post rate="4.5" user="Network/network" time="2 min ago" title="subNetwork" content="A community that gather students plan users and Establishment plan usersallowing them to exchange mutual interests within a credible supervised educational purpose environment.It has Name, subNetwork picture ,owner and moderators, description and a code of conduct." category={['Fact', 'subNetwork']} boost={true} />
             <Post rate="4.7" user="Network/network" time="12h ago" title="Post" content="

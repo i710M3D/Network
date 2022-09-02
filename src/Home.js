@@ -3,13 +3,13 @@ import Content from './Content';
 
 import Filter from './filter';
 
-const Home = ({FunNav}) => {
+const Home = ({FunNav,side}) => {
     FunNav(true);
     return (
         <div className="App  w-full h-full relative  ">
            
             <Filter />
-            <Content />
+            <Content side={side} />
             
         </div>
     );

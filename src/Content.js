@@ -6,11 +6,11 @@ import usthb from "./imgs/usthb.jfif";
 import Posts from './Posts';
 import { Link } from "react-router-dom";
 import { useState } from "react";
-const PIR = () => {
-    const [more,setMore] = useState(false);
+const Content = ({side}) => {
+    const [more, setMore] = useState(false);
     return (
-        <div className="z-40  flex justify-between mx-auto w-[80%]">
-            <div className='w-[250px] h-fit border-2 relative  ml-[8%]  flex flex-col  rounded-lg bg-gray-100 cursor-default'>
+        <div className="z-40  flex  ml-5 sm:mx-auto 2xl:ml-[11.9%] max-w-[80%]  ">
+            <div className='w-[250px] h-fit border-2 relative     flex-col  rounded-lg bg-gray-100 cursor-default  hidden 2xl:flex '>
                 <div className=" absolute w-full h-12 bg-gray-400 top-0 rounded-t-lg "></div>
                 <div className='h-16 w-16 border-2 border-black rounded-[50%] flex justify-center items-center mx-auto my-3 bg-white z-10 cursor-pointer '>
                     <p className=' text-[32px] font-semibold text-gray-500'>P</p>
@@ -54,36 +54,37 @@ const PIR = () => {
                     <MdOutlineBookmarkAdd size={25} className=' ' /><p className=' text-[#0183FF] font-semibold font-mon text-[16px] py-2 hover:text-blue-600' >saved</p>
                 </div>
                 <Link to="/signin" className="text-[#0183FF] font-mon font-semibold my-2 ml-9 cursor-pointer hover:text-blue-600">
-                <h1 >Login</h1>
+                    <h1 >Login</h1>
                 </Link>
             </div>
-            <Posts/>
-            <div className='w-96 h-fit border-2 flex flex-col  rounded-lg bg-gray-100 cursor-pointer '>
+            <Posts className="max-w-fit" />
+            <div className={`w-80 h-fit border-2  flex-col ml-auto rounded-lg bg-gray-100 cursor-pointer hidden 2xl:flex ${side ? ' -translate-x-36 ease-in-out duration-300' : 'ml-auto ease-in-out duration-300'}  `}>
                 <h1 className="font-mon font-bold text-gray-500 my-2 ml-2 text-lg border-b-2 w-[90%] cursor-default">Find new subNetworks</h1>
-                <div className=" flex w-[90%] border-b-2 py-2 ml-2 items-center   ">
+               
+                <div className=" flex w-[90%] border-b-2 py-2 ml-2 items-center  ">
                     <div className="w-11 h-11  bg-white rounded-full mr-2"> <img src={sbc} alt="" className="rounded-full" /></div>
-                    <h2 className="font-pop font-semibold text-[14px] text-gray-500    " >Summer Break Challeng</h2>
-                    <h2 className="px-3  font-semibold font-mon text-white bg-[#0183FF] rounded-full ml-auto mr-4 hover:scale-110 hover:bg-blue-600">Join</h2>
+                    <h2 className="font-pop font-semibold text-[14px] text-gray-500 " >Summer Break Challenge</h2>
+                    <h2 className="px-3 font-semibold font-mon text-white bg-[#0183FF] rounded-full ml-auto mr-4 hover:scale-110 hover:bg-blue-600 py-[2px]">Join</h2>
                 </div>
                 <div className=" flex w-[90%] border-b-2 py-2 ml-2 items-center  ">
                     <div className="w-11 h-11  bg-white rounded-full mr-2"> <img src={djz} alt="" className="rounded-full" /></div>
                     <h2 className="font-pop font-semibold text-[14px] text-gray-500 " >Djezzy</h2>
-                    <h2 className="px-3 font-semibold font-mon text-white bg-[#0183FF] rounded-full ml-auto mr-4 hover:scale-110 hover:bg-blue-600">Join</h2>
+                    <h2 className="px-3 font-semibold font-mon text-white bg-[#0183FF] rounded-full ml-auto mr-4 hover:scale-110 hover:bg-blue-600 py-[2px]">Join</h2>
                 </div>
-                <div className=" flex w-[90%]  py-2 ml-2 items-center  ">
+                <div className=" flex w-[90%]  py-2 ml-2 items-center border-b-2  ">
                     <div className="w-11 h-11  bg-white rounded-full mr-2 flex justify-center items-center text-[#0183FF] font-mon font-semibold text-3xl">N</div>
                     <h2 className="font-pop font-semibold text-[14px] text-gray-500  " >Network</h2>
-                    <h2 className="px-3 font-semibold font-mon text-white bg-[#0183FF] rounded-full ml-auto mr-4 hover:scale-110 hover:bg-blue-600">Join</h2>
+                    <h2 className="px-3 font-semibold font-mon text-white bg-[#0183FF] rounded-full ml-auto mr-4 hover:scale-110 hover:bg-blue-600 py-[2px]">Join</h2>
                 </div>
-                { more &&  <div className=" flex w-[90%] border-b-2 py-2 ml-2 items-center  ">
+                {more && <div className=" flex w-[90%] border-b-2 py-2 ml-2 items-center  ">
                     <div className="w-11 h-11  bg-white rounded-full mr-2"> <img src={gdsc} alt="" className="rounded-full" /></div>
                     <h2 className="font-pop font-semibold text-[14px] text-gray-500 " >GDSC USTHB</h2>
-                    <h2 className="px-3 font-semibold font-mon text-white bg-[#0183FF] rounded-full ml-auto mr-4 hover:scale-110 hover:bg-blue-600">Join</h2>
+                    <h2 className="px-3 font-semibold font-mon text-white bg-[#0183FF] rounded-full ml-auto mr-4 hover:scale-110 hover:bg-blue-600 py-[2px]">Join</h2>
                 </div>}
-                { more &&  <div className=" flex w-[90%] border-b-2 py-2 ml-2 items-center  ">
+                {more && <div className=" flex w-[90%] border-b-2 py-2 ml-2 items-center  ">
                     <div className="w-11 h-11  bg-white rounded-full mr-2"> <img src={usthb} alt="" className="rounded-full" /></div>
                     <h2 className="font-pop font-semibold text-[14px] text-gray-500 " >Usthb</h2>
-                    <h2 className="px-3 font-semibold font-mon text-white bg-[#0183FF] rounded-full ml-auto mr-4 hover:scale-110 hover:bg-blue-600">Join</h2>
+                    <h2 className="px-3 font-semibold font-mon text-white bg-[#0183FF] rounded-full ml-auto mr-4 hover:scale-110 hover:bg-blue-600 py-[2px]">Join</h2>
                 </div>}
                 <h1 className="font-mon font-bold text-gray-500  text-lg  w-full bg-gray-200 flex items-center justify-center py-2 " onClick={() => setMore(!more)} ><p className="hover:drop-shadow-sm hover:scale-105">see all</p></h1>
             </div>
@@ -93,4 +94,4 @@ const PIR = () => {
 
 
 
-export default PIR;
+export default Content;
