@@ -40,7 +40,7 @@ const Post = ( {user,rate,category,boost,content,img,time,title,follow}) => {
                         <Category category={category}  />
                     { follow && <h2 className="sm:w-12 sm:h-6 px-2 h-5 sm:px-0  font-mon text-white bg-[#0183FF]  rounded-full  mr-4 hover:scale-110 hover:bg-blue-600 flex items-center justify-center mt-[17px] text-[10px] sm:text-[14px]">Join</h2>}
                     </div>
-                    <div className='max-w-[600px] h-fit  border-y-2 mb-2 flex flex-wrap'>
+                    <div className='max-w-full h-fit  border-y-2 mb-2 flex flex-wrap'>
                         <p className='p-1 font-pop font-medium'>{content}</p>
                         <img src={img} alt="" className=' max-h-96 mx-auto '/>
                     </div>

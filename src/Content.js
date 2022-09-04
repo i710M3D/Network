@@ -10,7 +10,7 @@ import { useState } from "react";
 const Content = ({side,hr}) => {
     const [more, setMore] = useState(false);
     return (
-        <div className="z-40  flex  ml-5 sm:mx-auto 2xl:ml-[11.9%] max-w-[80%]  ">
+        <div className="z-40  flex   mx-auto 2xl:ml-[11.9%] max-w-[80%] ">
             <div className='w-[250px] h-fit border-2 relative     flex-col  rounded-lg bg-gray-100 cursor-default  hidden 2xl:flex '>
                 <div className=" absolute w-full h-12 bg-gray-400 top-0 rounded-t-lg "></div>
                 <div className='h-16 w-16 border-2 border-black rounded-[50%] flex justify-center items-center mx-auto my-3 bg-white z-10 cursor-pointer '>
