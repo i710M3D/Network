@@ -12,10 +12,11 @@ const Search = ({side,Funside}) => {
 
                 <div className=' h-16 w-full  flex items-center relative border-b-2 bg-white'>
                     <h1 className=' font-mon font-bold text-lg sm:text-3xl ml-2 cursor-pointer'> <span className='text-[#0183FF]'>N</span><span>etwork</span></h1>
-                    <input type="text" placeholder='search...' className='h-9 w-[48%] rounded-[32px] pl-6 pb-1 text-gray-700 font-pop border-2 border-gray sm:ml-16 ml-5  placeholder:absolute placeholder:my-1 focus:outline-none ' />
+                    <input type="text" placeholder='search...' className=' h-9 w-[250px] sm:w-[70%] rounded-[32px] pl-6 pb-1 text-gray-700 font-pop border-2 border-gray sm:ml-16 ml-5  placeholder:absolute placeholder:my-1 focus:outline-none ' />
                     <BiSearch size={20} className=' absolute  sm:left-[212px] left-[116px]' />
-                    <div className='ml-[15%]  justify-between w-[500px] h-fit  relative  px-2 py-[10px] hidden lg:flex'>
-                        <Link to='/'>
+                    <div className='   w-[900px] h-fit   hidden lg:block  ml-6'>
+                     <div className="justify-between  px-2 pt-[10px] pb-[4px] hidden lg:flex w-full  ">
+                     <Link to='/'>
                             <RiHomeWifiFill size={32} className={nav === 0 ? "cursor-pointer scale-125 " : "cursor-pointer hover:scale-125"} onClick={() => setNav(0)} />
                         </Link>
                         <RiCompassDiscoverFill size={32} className={nav === 1 ? "cursor-pointer scale-125 " : "cursor-pointer hover:scale-125"} onClick={() => setNav(1)} />
@@ -24,7 +25,11 @@ const Search = ({side,Funside}) => {
                         </Link>
                         <RiNotification3Fill size={32} className={nav === 3 ? "cursor-pointer scale-125 " : "cursor-pointer hover:scale-125"} onClick={() => setNav(3)} />
                         <RiChat3Fill size={32} className={nav === 4 ? "cursor-pointer scale-125 " : "cursor-pointer hover:scale-125"} onClick={() => setNav(4)} />
-                        <div className={`h-[6px] w-10  transform translate-x-1 rounded-full bg-[#0183FF] absolute bottom-0 left-0 ease-in-out duration-300 ${nav === 0 && 'translate-x-1  '} ${nav === 1 && 'translate-x-[118px] '} ${nav === 2 && 'translate-x-[230.0px] '} ${nav === 3 && 'translate-x-[343px] '} ${nav === 4 && 'translate-x-[455px] '}`}></div>
+                     </div>
+                     <div className="w-full">
+                     <div className={`h-[6px] w-10  transform translate-x-1 rounded-full bg-[#0183FF]  bottom-0 left-0 ease-in-out duration-300 ${nav === 0 && 'translate-x-1  '} ${nav === 1 && 'translate-x-[129px] '} ${nav === 2 && 'translate-x-[250.0px] '} ${nav === 3 && 'translate-x-[374px] '} ${nav === 4 && 'translate-x-[496px] '}`}></div>
+
+                     </div>
 
                     </div>
                     <Link to='/Signin' className="ml-[8%] mr-2">
