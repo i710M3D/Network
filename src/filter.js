@@ -2,15 +2,15 @@ import { AiFillStar } from 'react-icons/ai';
 import { BsFillCalendarDateFill,BsPlusLg } from "react-icons/bs";
 import { MdOutlineCategory } from "react-icons/md";
 import { FaAngleDown } from "react-icons/fa";
-import { useState } from 'react';
-const Filter = () => {
-    const [hr,setHr] = useState(true);
+
+const Filter = ({hr,Funhr}) => {
+    
     return ( 
         
         <div className=" sm:scale-100 sm:w-[600px] scale-90 mx-auto h-fit relative mt-12 pt-4  ">
             <div className="w-[90%] flex justify-between  sm:px-10 my-5  mx-auto relative ">    
-                <h1 className= "text-[32px] font-mon font-semibold  cursor-pointer"  onClick={() => setHr(true)}>Home</h1>
-                <h1 className="text-[32px] font-mon font-semibold  cursor-pointer"  onClick={() => setHr(false)}>Recommended</h1>
+                <h1 className= "text-[32px] font-mon font-semibold  cursor-pointer"  onClick={() => Funhr(true)}>Home</h1>
+                <h1 className="text-[32px] font-mon font-semibold  cursor-pointer"  onClick={() => Funhr(false)}>Recommended</h1>
                 <div className={`h-[6px]  rounded-full bg-[#0183FF] absolute bottom-0 left-0 ease-in-out duration-300 ${ hr ? ' -translate-x-2 sm:translate-x-8  w-[117px]' : ' translate-x-[136px] sm:translate-x-[237px]   w-[273px]'} `  }></div>
             </div>
             <div className=" flex  items-center h-14 bg-gray-200 rounded-lg mb-[20px]   sm:justify-start px-2">

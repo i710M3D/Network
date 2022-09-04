@@ -1,6 +1,6 @@
 
 
-import { BrowserRouter,Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter,Route,  Routes } from "react-router-dom";
 import Home from './Home';
 import CreatePost from './CreatePost';
 import Singin from './signin';
@@ -9,8 +9,7 @@ import Search from "./Search";
 import { useState } from "react";
 import Subplans from "./Subplans";
 import Signup2 from "./signup2";
-import Post from "./Post";
-import Posts from "./Posts";
+
 
 
 

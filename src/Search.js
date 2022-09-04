@@ -12,7 +12,7 @@ const Search = ({side,Funside}) => {
 
                 <div className=' h-16 w-full  flex items-center relative border-b-2 bg-white'>
                     <h1 className=' font-mon font-bold text-lg sm:text-3xl ml-2 cursor-pointer'> <span className='text-[#0183FF]'>N</span><span>etwork</span></h1>
-                    <input type="text" placeholder='search...' className='h-9 w-[550px] rounded-[32px] pl-6 border-2 border-gray sm:ml-16 ml-10  placeholder:absolute placeholder:my-1 focus:outline-none ' />
+                    <input type="text" placeholder='search...' className='h-9 w-[550px] rounded-[32px] pl-6 pb-1 text-gray-700 font-pop border-2 border-gray sm:ml-16 ml-10  placeholder:absolute placeholder:my-1 focus:outline-none ' />
                     <BiSearch size={20} className=' absolute  sm:left-[212px] left-[136px]' />
                     <div className='ml-[15%]  justify-between w-[500px] h-fit  relative  px-2 py-[10px] hidden lg:flex'>
                         <Link to='/'>
