@@ -46,7 +46,7 @@ const Search = ({ side, Funside }) => {
                     <p className=' text-[20px] font-semibold  px-3 text-white '>P</p>
                 </div>
             </div>
-            <div className={`w-full sm:w-72 h-screen bg-[#0183FF] absolute sm:fixed   left-[100%]    ${side ? '-translate-x-full sm:-translate-x-72 ease-in-out duration-300 ' : 'translate-x-full sm:translate-x-72 ease-in-out duration-300'}  `}>
+            <div className={`w-full sm:w-72 h-screen bg-[#0183FF] absolute sm:fixed   left-[100%] overflow-scroll sm:overflow-hidden   ${side ? '-translate-x-full sm:-translate-x-72 ease-in-out duration-300 ' : 'translate-x-full sm:translate-x-72 ease-in-out duration-300'}  `}>
                 <Sidebar />
                 <div className="w-full h-14 bg-white mt-5 sm:hidden flex px-4 justify-between items-center">
                     <Link to='/'>
