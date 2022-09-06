@@ -10,7 +10,7 @@ import { useState } from "react";
 const Content = ({side,hr}) => {
     const [more, setMore] = useState(false);
     return (
-        <div className="z-40  flex mx-2  sm:mx-auto 2xl:ml-[11.9%] sm:max-w-[80%] ">
+        <div className="z-40  flex mx-2  sm:mx-auto 2xl:ml-[16.9%] sm:max-w-[70%] ">
             <div className='w-[250px] h-fit border-2 relative     flex-col  rounded-lg bg-gray-100 cursor-default  hidden 2xl:flex '>
                 <div className=" absolute w-full h-12 bg-gray-400 top-0 rounded-t-lg "></div>
                 <div className='h-16 w-16 border-2 border-black rounded-[50%] flex justify-center items-center mx-auto my-3 bg-white z-10 cursor-pointer '>
@@ -29,7 +29,7 @@ const Content = ({side,hr}) => {
                 </Link>
             </div>
              <Posts hr={hr} />
-            <div className={`w-80 h-fit border-2  flex-col ml-auto rounded-lg bg-gray-100 cursor-pointer hidden 2xl:flex ${side ? ' -translate-x-36 ease-in-out duration-300' : 'ml-auto ease-in-out duration-300'}  `}>
+            <div className={`w-80 h-fit border-2  flex-col ml-auto rounded-lg bg-gray-100 cursor-pointer hidden 2xl:flex ${side ? ' -translate-x-14 ease-in-out duration-300 w-80' : 'ml-auto ease-in-out duration-300 w-80'}  `}>
                 <h1 className="font-mon font-bold text-gray-500 my-2 ml-2 text-lg border-b-2 w-[90%] cursor-default">Find new subNetworks</h1>
                
                <SubNetworks img={sbc} name="Summer Break Challenge" />

@@ -10,9 +10,9 @@ const CreatePost = () => {
     const [page, setPage] = useState(0)
     return (
     
-            <div className="h-screen w-full mt-16 ">
+            <div className="h-screen w-full mt-16  ">
 
-               <div className="mx-2">
+               <div className="mx-4">
                <h1 className="font-mon text-gray-500 text-xl font-semibold max-w-[750px] border-b-2 mx-auto pt-12">Create Post</h1>
                 <div className=" max-w-[750px] mx-auto flex mt-3 ">
                     <select className=" w-56 appearance-none h-8 focus:outline-none border-2 border-[#0183FF] rounded-[4px] pl-2 font-pop text-gray-500 font-base ">
@@ -47,11 +47,11 @@ const CreatePost = () => {
                     </div>
                     <div className="w-full border-b-2 h-fit  ">
                         <div className="flex">
-                            <input type="text" placeholder="Title" className="mt-2 border-2 outline-none w-[90%] mx-auto rounded-md h-8 px-2 " />
+                            <input type="text" placeholder="Title" className="mt-2 border-2 outline-none w-[90%] sm:mx-auto ml-2 rounded-md h-8 px-2  " />
                             <p className="font-pop font-medium text-[10px] mt-4 mr-4">0/150</p>
                         </div>
                         {page === 0 && <div className="flex">
-                            <textarea rows="" cols="" placeholder="Text..." className="mt-2 border-2 outline-none w-[90%] mx-auto rounded-md h-72 px-2 text-xl"></textarea>
+                            <textarea rows="" cols="" placeholder="Text..." className="mt-2 border-2 outline-none w-[90%] sm:mx-auto ml-2 rounded-md h-72 px-2 text-xl"></textarea>
                             <p className="font-pop font-medium text-[10px] mt-4 mr-4">0/450</p>
                         </div>}
                         {page === 1 && <div className=" border-dashed w-[95%] h-72 border-2 flex justify-center items-center mt-2 mx-auto rounded-md">
@@ -73,7 +73,7 @@ const CreatePost = () => {
                     <div className=" w-full  flex items-center h-11 ml-2 sm:ml-5  " >
                         <input type="checkbox" id="agree" name="" value="" className=" appearance-none w-5 h-5 rounded-md border-2 bg-white  checked:bg-blue-500 cursor-pointer" />
                         <CgCheck size={20} className=" text-white z-10 ml-[-20px] pointer-events-none" />
-                        <label htmlFor="agree" className="font-pop font-semibold text-gray-500 text-xs ml-1 cursor-pointer">i agree on Network's <span className="text-[#0183FF] cursor-pointer">content policy</span> and be a noice <span className="text-[#0183FF]">Networkian</span></label>
+                        <label htmlFor="agree" className="font-pop font-semibold text-gray-500 sm:ml-1 -ml-3 text-xs cursor-pointer scale-90 sm:scale-100">i agree on Network's <span className="text-[#0183FF] cursor-pointer">content policy</span> and be a noice <span className="text-[#0183FF]">Networkian</span></label>
                     </div>
                 </div>
                </div>

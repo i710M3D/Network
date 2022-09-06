@@ -19,10 +19,10 @@ const Post = ( {user,rate,category,boost,content,img,time,title,follow}) => {
                 <div className='max-h-full w-[48px] bg-gray-200 flex flex-col items-center rounded-l-[8px]   '>
 
                     <div className='h-fit w-[48px]  flex flex-col items-center  bg-[#0183FF] text-white  hover:bg-blue-600 rounded-l rounded-b-none' onClick={() => setStar(!star)}>
-                        <AiFillStar size={25} className={star ? 'mt-4' : 'mt-4 text-yellow-400'} />
+                        <AiFillStar size={25} className={star ? 'mt-4' : 'mt-4 text-yellow-300 scale-125'} />
                         <p className=' '>{rate}</p> 
                     </div>
-                    <MdLightbulbOutline size={25} className={light ? 'mt-auto mb-1 hover:scale-125' : 'mt-auto mb-1 text-yellow-500 scale-125 hover:scale-125'} onClick={() => setLight(!light)}/>
+                    <MdLightbulbOutline size={25} className={light ? 'mt-auto mb-1 hover:scale-125' : 'mt-auto mb-1 text-yellow-300 scale-125 hover:scale-125'} onClick={() => setLight(!light)}/>
                 </div>
 
                 <div className=' w-full'>

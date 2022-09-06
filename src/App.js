@@ -9,6 +9,7 @@ import Search from "./Search";
 import { useState } from "react";
 import Subplans from "./Subplans";
 import Signup2 from "./signup2";
+import Sidebar from "./SideBar";
 
 
 
@@ -20,7 +21,7 @@ function App() {
     <div className="App min-h-screen w-full bg-gray-300 ">
     <BrowserRouter>
     { showNav && <div>
-       <Search side={side} Funside={setSide} /> 
+       <Search side={side} Funside={setSide} />
        </div> }
       <Routes>
         <Route path="/" element={ <Home FunNav={ setShowNav } side={side}  />} />
