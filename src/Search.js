@@ -46,9 +46,10 @@ const Search = ({ side, Funside }) => {
                     <p className=' text-[20px] font-semibold  px-3 text-white '>P</p>
                 </div>
             </div>
-            <div className={`w-full sm:w-72 h-screen bg-[#0183FF] absolute sm:fixed   left-[100%] overflow-scroll sm:overflow-hidden   ${side ? '-translate-x-full sm:-translate-x-72 ease-in-out duration-300 ' : 'translate-x-full sm:translate-x-72 ease-in-out duration-300'}  `}>
+            <div className={`w-full sm:w-72 h-screen border bg-[#0183FF] absolute sm:fixed   left-[100%] overflow-scroll sm:overflow-hidden   ${side ? '-translate-x-full sm:-translate-x-72 ease-in-out duration-300 overflow-scroll sm:overflow-hidden ' : 'translate-x-full sm:translate-x-72 ease-in-out duration-300 overflow-scroll sm:overflow-hidden'}  `}>
+                <div className="w-full h-fit relative">
                 <Sidebar />
-                <div className="w-full h-14 bg-white mt-5 sm:hidden flex px-4 justify-between items-center">
+                <div className="w-full h-fit bg-white  sm:hidden flex py-2 px-4 mt-7 justify-between mb-12  items-center ">
                     <Link to='/'>
                         <RiHomeWifiFill size={32} className={nav === 0 ? "cursor-pointer scale-125 text-[#0183FF] ease-linear " : "cursor-pointer hover:scale-125 hover:text-[#0183ff]  "} onClick={() => handler(0)} />
                     </Link>
@@ -59,6 +60,8 @@ const Search = ({ side, Funside }) => {
                     <RiNotification3Fill size={32} className={nav === 3 ? "cursor-pointer scale-125 text-[#0183FF] ease-linear " : "cursor-pointer hover:scale-125 hover:text-[#0183ff]  "} onClick={() => handler(3)} />
                     <RiChat3Fill size={32} className={nav === 4 ? "cursor-pointer scale-125 text-[#0183FF] ease-linear " : "cursor-pointer hover:scale-125 hover:text-[#0183ff]  "} onClick={() => handler(4)} />
                 </div>
+                </div>
+               
                 
             </div>
         </div>

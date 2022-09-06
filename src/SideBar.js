@@ -44,7 +44,7 @@ const Sidebar = () => {
             <h1 className="text-white underline ml-[10%] font-pop cursor-pointer text-[12px] py-1 ">Private policy</h1>
             <h1 className="text-white underline ml-[10%] font-pop cursor-pointer text-[12px] py-1 ">Content policy</h1>
             <h1 className="text-white underline ml-[10%] font-pop cursor-pointer text-[12px]  mt-3 ">Switch account</h1>
-            <h1 className="text-white  ml-[10%] font-pop cursor-pointer text-[16px] mt-1">Login</h1>
+            <h1 className="text-white  ml-[10%] font-pop cursor-pointer text-[16px] mt-1 ">Login</h1>
             
 
    
